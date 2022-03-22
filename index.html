@@ -450,19 +450,8 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Our Equipment&#x27;, &#x27;href&#x27;: &#x27;gallery-Our-Equipment&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Our Work&#x27;, &#x27;href&#x27;: &#x27;gallery-Our-Work&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Our Work&#x27;, &#x27;href&#x27;: &#x27;gallery-Our-Work&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Our Equipment&#x27;, &#x27;href&#x27;: &#x27;gallery-Our-Equipment&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
-                                                    <a
-                                                        href=" gallery-Our-Equipment "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Our Equipment</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
                                                     <a
                                                         href=" gallery-Our-Work "
                                                         role="menuitem"
@@ -470,6 +459,17 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Our Work</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Our-Equipment "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Our Equipment</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -761,15 +761,15 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="gallery-Our-Equipment" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Our Equipment</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-Our-Work" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Our Work</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Our-Equipment" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Our Equipment</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -1866,7 +1866,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 6,
+        amountOfImages: 7,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1887,6 +1887,27 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5cc2d76e-4d2e-448b-b120-de5f14a85a3d.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5cc2d76e-4d2e-448b-b120-de5f14a85a3d.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5cc2d76e-4d2e-448b-b120-de5f14a85a3d.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5cc2d76e-4d2e-448b-b120-de5f14a85a3d.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/28f05dfd-a470-43ec-85a0-46a189e9f36b.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/28f05dfd-a470-43ec-85a0-46a189e9f36b.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
@@ -1906,34 +1927,13 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/268b1328-7f97-490f-bb44-1e35fedde976.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/268b1328-7f97-490f-bb44-1e35fedde976.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/268b1328-7f97-490f-bb44-1e35fedde976.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/268b1328-7f97-490f-bb44-1e35fedde976.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1971,11 +1971,11 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1997,6 +1997,27 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/133d0713-8a31-48f5-ae94-b5604e26b207.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/133d0713-8a31-48f5-ae94-b5604e26b207.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/133d0713-8a31-48f5-ae94-b5604e26b207.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden sm:block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -2059,7 +2080,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/28f05dfd-a470-43ec-85a0-46a189e9f36b.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5cc2d76e-4d2e-448b-b120-de5f14a85a3d.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2067,7 +2088,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/268b1328-7f97-490f-bb44-1e35fedde976.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/28f05dfd-a470-43ec-85a0-46a189e9f36b.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2075,7 +2096,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/268b1328-7f97-490f-bb44-1e35fedde976.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2091,7 +2112,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/04f78b61-3091-4d94-b05d-49b17c853af3.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2100,6 +2121,14 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/133d0713-8a31-48f5-ae94-b5604e26b207.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 6">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b5bfdc61-f141-4207-853c-a448d806b577.jpeg" alt="Mowing for CRC Affordable Quality Lawn Care LLC in Clintwood, VA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -3315,7 +3344,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="45423"
+                                aria-controls="45554"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -3335,7 +3364,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45423">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45554">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +12762447750. You can also email us at crcaffordablequalitylawncare@gmail.com! Thanks!</p>
                         </dd>
@@ -3348,7 +3377,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="45424"
+                                aria-controls="45555"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -3368,7 +3397,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45424">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45555">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -3381,7 +3410,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="45425"
+                                aria-controls="45556"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -3401,7 +3430,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45425">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45556">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3826,7 +3855,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Mon: 8:00am - 9:00pm</a
+                                  >Mon: 8:00am - 9:00am</a
                               >
                           </li>
                           
@@ -3842,7 +3871,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Wed: 8:00am - 9:00am</a
+                                  >Wed: 8:00am - 9:00pm</a
                               >
                           </li>
                           
@@ -3858,7 +3887,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Fri: 8:00am - 9:00pm</a
+                                  >Fri: 8:00am - 9:00am</a
                               >
                           </li>
                           
@@ -3866,7 +3895,7 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sat: 8:00am - 9:00am</a
+                                  >Sat: 8:00am - 9:00pm</a
                               >
                           </li>
                           
@@ -4047,62 +4076,62 @@ We offer a wide range of services to help your property look it&#x27;s best. We&
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-159710"
-                                            name="159710"
+                                            id="contact-service-160166"
+                                            name="160166"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-159710" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                        <label for="contact-label-service-160166" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-159711"
-                                            name="159711"
+                                            id="contact-service-160167"
+                                            name="160167"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-159711" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                        <label for="contact-label-service-160167" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-159712"
-                                            name="159712"
+                                            id="contact-service-160168"
+                                            name="160168"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-159712" class="ml-3 text-sm font-medium text-gray-700">Hedge and Shrub Trimming</label>
+                                        <label for="contact-label-service-160168" class="ml-3 text-sm font-medium text-gray-700">Hedge and Shrub Trimming</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-159713"
-                                            name="159713"
+                                            id="contact-service-160169"
+                                            name="160169"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-159713" class="ml-3 text-sm font-medium text-gray-700">Fall and Spring Clean Up</label>
+                                        <label for="contact-label-service-160169" class="ml-3 text-sm font-medium text-gray-700">Fall and Spring Clean Up</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-159714"
-                                            name="159714"
+                                            id="contact-service-160170"
+                                            name="160170"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-159714" class="ml-3 text-sm font-medium text-gray-700">Weed Eating</label>
+                                        <label for="contact-label-service-160170" class="ml-3 text-sm font-medium text-gray-700">Weed Eating</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-159715"
-                                            name="159715"
+                                            id="contact-service-160171"
+                                            name="160171"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-159715" class="ml-3 text-sm font-medium text-gray-700">Brush Clearing</label>
+                                        <label for="contact-label-service-160171" class="ml-3 text-sm font-medium text-gray-700">Brush Clearing</label>
                                     </div>
                                 
                             </div>
