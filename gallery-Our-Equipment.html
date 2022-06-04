@@ -607,15 +607,14 @@
                     <div class="w-full sm:w-auto">
                         
                         <div class="w-full sm:w-auto">
-                            <a
-                                target="_blank" rel="noopener noreferrer" 
-                                href="https://clienthub.getjobber.com/client_hubs/f221324c-9093-43ee-b172-38e3f289dd0e/public/work_request/new?source=website"
-                                :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
+                            <button
+                            :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
+                            @click="contactModalOpen = true"
                                 class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none hover:bg-primary-darker sm:w-auto bg-primary focus-visible:ring-2 ring-primary ring-opacity-75 ring-offset-2"
                                 >
-                               Book Now
-                            </a>
-                        </div>
+                                Get a Quote
+                            </button>
+                        </div> 
                         
                             
                      
@@ -829,12 +828,12 @@
                     </div>
                     <div class="d-none p-1 bg-primary sm:bg-gray-50">
                         
-                            <a
-                                href="https://clienthub.getjobber.com/client_hubs/f221324c-9093-43ee-b172-38e3f289dd0e/public/work_request/new?source=website"
-                                class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary  hover:bg-gray-100"
-                                >
-                                Book Now
-                            </a>
+                            <button
+                            @click="contactModalOpen = true"
+                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary  hover:bg-gray-100"
+                            >
+                                Get a Quote
+                            </button>
                         
                         
                             <a
@@ -1092,13 +1091,13 @@
             
             
             <div class="w-full sm:w-auto">
-                <a
-                    href="https://clienthub.getjobber.com/client_hubs/f221324c-9093-43ee-b172-38e3f289dd0e/public/work_request/new?source=website"
+                <button
+                    @click="contactModalOpen = true"
                     class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md  sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"
-                >
-                    Book Now
-                </a>
-            </div>
+                    >
+                    Get a Quote
+                </button>
+            </div> 
             
                 
             
@@ -1479,68 +1478,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221164"
-                                                    name="221164"
+                                                    id="contact-service-226373"
+                                                    name="226373"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mowing"
                                             />
-                                            <label for="contact-label-service-221164" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                            <label for="contact-label-service-226373" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221165"
-                                                    name="221165"
+                                                    id="contact-service-226374"
+                                                    name="226374"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mulch Installation"
                                             />
-                                            <label for="contact-label-service-221165" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                            <label for="contact-label-service-226374" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221166"
-                                                    name="221166"
+                                                    id="contact-service-226375"
+                                                    name="226375"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Hedge and Shrub Trimming"
                                             />
-                                            <label for="contact-label-service-221166" class="ml-3 text-sm font-medium text-gray-700">Hedge and Shrub Trimming</label>
+                                            <label for="contact-label-service-226375" class="ml-3 text-sm font-medium text-gray-700">Hedge and Shrub Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221167"
-                                                    name="221167"
+                                                    id="contact-service-226376"
+                                                    name="226376"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fall and Spring Clean Up"
                                             />
-                                            <label for="contact-label-service-221167" class="ml-3 text-sm font-medium text-gray-700">Fall and Spring Clean Up</label>
+                                            <label for="contact-label-service-226376" class="ml-3 text-sm font-medium text-gray-700">Fall and Spring Clean Up</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221168"
-                                                    name="221168"
+                                                    id="contact-service-226377"
+                                                    name="226377"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Weed Eating"
                                             />
-                                            <label for="contact-label-service-221168" class="ml-3 text-sm font-medium text-gray-700">Weed Eating</label>
+                                            <label for="contact-label-service-226377" class="ml-3 text-sm font-medium text-gray-700">Weed Eating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221169"
-                                                    name="221169"
+                                                    id="contact-service-226378"
+                                                    name="226378"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Brush Clearing"
                                             />
-                                            <label for="contact-label-service-221169" class="ml-3 text-sm font-medium text-gray-700">Brush Clearing</label>
+                                            <label for="contact-label-service-226378" class="ml-3 text-sm font-medium text-gray-700">Brush Clearing</label>
                                         </div>
                                         
                                     </div>
@@ -1569,68 +1568,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221164"
-                                                    name="221164"
+                                                    id="contact-service-226373"
+                                                    name="226373"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mowing"
                                             />
-                                            <label for="contact-label-service-221164" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                            <label for="contact-label-service-226373" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221165"
-                                                    name="221165"
+                                                    id="contact-service-226374"
+                                                    name="226374"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mulch Installation"
                                             />
-                                            <label for="contact-label-service-221165" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                            <label for="contact-label-service-226374" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221166"
-                                                    name="221166"
+                                                    id="contact-service-226375"
+                                                    name="226375"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Hedge and Shrub Trimming"
                                             />
-                                            <label for="contact-label-service-221166" class="ml-3 text-sm font-medium text-gray-700">Hedge and Shrub Trimming</label>
+                                            <label for="contact-label-service-226375" class="ml-3 text-sm font-medium text-gray-700">Hedge and Shrub Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221167"
-                                                    name="221167"
+                                                    id="contact-service-226376"
+                                                    name="226376"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fall and Spring Clean Up"
                                             />
-                                            <label for="contact-label-service-221167" class="ml-3 text-sm font-medium text-gray-700">Fall and Spring Clean Up</label>
+                                            <label for="contact-label-service-226376" class="ml-3 text-sm font-medium text-gray-700">Fall and Spring Clean Up</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221168"
-                                                    name="221168"
+                                                    id="contact-service-226377"
+                                                    name="226377"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Weed Eating"
                                             />
-                                            <label for="contact-label-service-221168" class="ml-3 text-sm font-medium text-gray-700">Weed Eating</label>
+                                            <label for="contact-label-service-226377" class="ml-3 text-sm font-medium text-gray-700">Weed Eating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-221169"
-                                                    name="221169"
+                                                    id="contact-service-226378"
+                                                    name="226378"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Brush Clearing"
                                             />
-                                            <label for="contact-label-service-221169" class="ml-3 text-sm font-medium text-gray-700">Brush Clearing</label>
+                                            <label for="contact-label-service-226378" class="ml-3 text-sm font-medium text-gray-700">Brush Clearing</label>
                                         </div>
                                         
                                     </div>
